@@ -1,0 +1,14 @@
+import pandas as pd
+
+abc = ["351380", "352940", "354330", "354410", "354780", "354870", "354880"]
+
+df = pd.concat([bloco[bloco["CODMUNRES"].str.strip().str[:6].isin(abc)]
+                for bloco in pd.read_csv("SINASC_2026.csv", sep=";",
+                                         encoding="latin-1", dtype=str,
+                                         chunksize=200000)], ignore_index=True)
+
+df["CODMUNRES"] = df["CODMUNRES"].str[:6]
+df.to_csv("nascimentos_abc_2026.csv", index=False)
+print("Registros do ABC:", len(df))
+print(df["CODMUNRES"].value_counts())
+print(list(df.columns))
