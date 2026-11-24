@@ -3,6 +3,12 @@
 Dashboard interativo dos nascimentos registrados no SINASC 2026 (Ministério da Saúde)
 para os sete municípios do Grande ABC paulista.
 
+# Painel de Monitoramento de Nascimentos — Grande ABC
+
+**Painel publicado:** https://painel-nascimentos-abc-bc2gcfvtjaihqemc6nsmnr.streamlit.app
+
+Dashboard interativo dos nascimentos registrados no SINASC 2026...
+
 ## Fonte dos dados
 SINASC — Sistema de Informação sobre Nascidos Vivos (DATASUS / Ministério da Saúde).
 Dados abertos: https://dadosabertos.saude.gov.br/dataset/sistema-de-informacao-sobre-nascidos-vivos-sinasc
